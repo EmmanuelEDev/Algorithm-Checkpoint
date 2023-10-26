@@ -1,0 +1,38 @@
+ALGORITHM checkpoint
+VAR
+    nVowels,nChar, i : INTEGER:=0;
+    nWords : INTEGER:=1;
+    sentence : STRING;
+BEGIN
+    Write("type in your sentence")
+    Read(sentence); //This is a boy. 
+    WHILE (sentence[i]<>".") DO
+    nChar=nchar+1 
+
+    IF (sentence[i] = " ") THEN
+        nWords = nWords + 1
+    END_IF
+
+    IF (sentence[i] = "a" or sentence[i] = "e" or sentence[i] = "i" or sentence[i] = "o" or sentence[i] = "u") THEN
+        nvowels = nvowels + 1
+    END_IF
+
+
+
+
+
+    i:=i+1
+    END_WHILE
+    nChar=nchar+1
+
+
+    
+    
+    
+    Write("the number of vowels are:");
+    Write(nVowels);
+    Write("the number of words are:");
+    Write(nWords);
+    Write("the number of Characters are:");
+    Write(nChar);
+END
